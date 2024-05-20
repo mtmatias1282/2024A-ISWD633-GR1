@@ -28,7 +28,9 @@ Descargar la imagen **hello-world**
 docker pull hello-world 
 ```
 
-**¿Qué es nginx?**    
+**¿Qué es nginx?**
+
+
 Nginx es un servidor web y proxy inverso de alto rendimiento que también puede funcionar como equilibrador de carga, servidor de correo y caché HTTP.
 
 Descargar la imagen  **nginx** en la versión **alpine**
@@ -61,7 +63,9 @@ Inspeccionar la imagen hello-world
 docker inspect hello-world
 ```
 
-**¿Con qué algoritmo se está generando el ID de la imagen?**    
+**¿Con qué algoritmo se está generando el ID de la imagen?**
+
+
 En Docker, los IDs de las imágenes se generan utilizando un algoritmo de hashing criptográfico, específicamente el algoritmo SHA-256.
 
 ### Filtrar imágenes
