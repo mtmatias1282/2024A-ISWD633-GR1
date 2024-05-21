@@ -63,7 +63,7 @@ docker run --name srv-web2 nginx:alpine
 **¿Qué sucede luego de la ejecución del comando?**
 
 
-El terminal queda "atrapado" y no puedes introducir más comandos hasta que detengas el contenedor.
+El terminal queda "atrapado" en la linea start worker process 37 y no puedes introducir más comandos hasta que detengas el contenedor.
 
 Cuando ejecutas un contenedor en primer plano sin la opción -d (modo detach), el contenedor captura la entrada estándar (stdin) del terminal, lo que significa que el terminal queda "atrapado" y no puedes introducir más comandos hasta que detengas el contenedor.
 
@@ -95,7 +95,7 @@ docker rmi -f hello-world
 Verificar que el contenedor se eliminó
 
 ```
-docker ps
+docker ps -a
 ```
 
 ### Para eliminar un contenedor que esté ejecutándose
@@ -113,11 +113,14 @@ docker rm -f srv-web3
 Verificar que el contenedor que se eliminó
 
 ```
-docker rm -f srv-web3
+docker ps 
 ```
 
 ### Para inspecionar un contenedor 
 
 
 Inspeccionar el contenedor **srv-web** 
-# COMPLETAR
+
+```
+docker inspect srv-web
+```
