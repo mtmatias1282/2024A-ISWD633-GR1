@@ -88,8 +88,10 @@ docker rm <nombre contenedor>
 
 Eliminar el contenedor que se creó a partir de la imagen hello-world 
 
+
 ```
-docker rmi -f hello-world
+docker ps -a
+docker rm srv-web
 ```
 
 Verificar que el contenedor se eliminó
