@@ -60,7 +60,8 @@ Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen ngin
 docker run --name srv-web2 nginx:alpine
 ```
 
-###¿Qué sucede luego de la ejecución del comando?
+**¿Qué sucede luego de la ejecución del comando?**
+
 
 El terminal queda "atrapado" y no puedes introducir más comandos hasta que detengas el contenedor.
 
