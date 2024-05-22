@@ -43,6 +43,7 @@ docker pull nginx:alpine
 ```
 docker images:<tag>
 ```
+![Imagen y contenedores](imagenes/Listar_Imagenes.png)
 
 # COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
 
