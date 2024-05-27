@@ -1,9 +1,9 @@
 # Mapeo de Puertos 
 ### Usando una forma más semántica cuando se especifican puertos
-
 ```
 docker run -d --name <nombre contenedor> --publish published=<valorPuertoHost>,target=<valor> <nombre imagen>:<tag> 
 ```
+
 ### Publicando todos los puertos
 ```
 docker run -P -d --name <nombre contenedor> <nombre imagen>:<tag> 
@@ -15,7 +15,9 @@ docker run -P -d --name <nombre contenedor> <nombre imagen>:<tag>
 No puedes mapear puertos a un contenedor existente directamente después de su creación con Docker. El mapeo de puertos debe especificarse en el momento de crear y ejecutar el contenedor.
 
 ### Crear contenedor de Jenkins puertos contenedor: 8080 (interface web) y 50000 (comunicación entre nodos) imagen: jenkins/jenkins:alpine3.18-jdk11
-# COMPLETAR
+```
+docker run -d --name Jenkins --publish published=8080,target=8080 --publish published=50000,target=50
+```
 
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
 
@@ -25,16 +27,21 @@ Para obtener la contraseña solicitada es necesario ingresar al contenedor.
 ![Imagen](imagenes/jenkins.PNG)
 
 # Operaciones con contenedores
-
 ### Ejecutar un comando en un contenedor de Docker en ejecución
 ```
 docker exec <nombre contenedor> <comando> <argumentos opcionales>
 ```
-# COMPLETAR
+
 ### ¿Para qué se usa el comando ls?
+Lista los nombres de archivos y directorios en el directorio actual.
+
 ### ¿Para qué sirve el argumento -l junto al comando ls?
+Muestra una lista detallada que incluye permisos de archivo, propietario, grupo, tamaño, fecha de modificación y nombre del archivo.
+
 ### Usar el contenedor de jenkins creado previamente y ejecutar el comando ls con el argumento -l
-# COMPLETAR
+```
+docker exec Jenkins ls -l
+```
 # COLOCAR UNA CAPTURA DE PANTALLA
 
 ### Para ejecutar un shell interactivo en un contenedor de Docker especificado.
@@ -88,8 +95,9 @@ docker exec -it <nombre contenedor> <programa o comando>
 ```
 
 ### Ahora puedes acceder al contenedor de jenkins y obtener la contraseña ubicada en /var/jenkins_home/secrets/initialAdminPassword
-
-# COMPLETAR
+```
+cd /var/jenkins_home/secrets/
+```
 
 ### Colocar una captura de pantalla de la ventana que aparece después de colocar la contraseña.
 
@@ -97,7 +105,6 @@ docker exec -it <nombre contenedor> <programa o comando>
 
 
 ### Para ver los logs de un contenedor
-
 ```
 docker logs n <cantidad de líneas> <nombre o id del contenedor> 
 ```
