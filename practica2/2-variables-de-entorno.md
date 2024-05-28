@@ -8,11 +8,11 @@ Las variables de entorno son una forma de almacenar información específica del
 ### Ejemplos de Variables de Entorno Comunes
 
 
-PATH: Define una lista de directorios donde el sistema busca ejecutables cuando se introduce un comando.
-HOME: Indica el directorio home del usuario actual.
-USER: Contiene el nombre del usuario actual.
-TEMP o TMP: Directorio donde se almacenan archivos temporales.
-LANG o LC_ALL: Configuran el idioma y la localización del entorno.
+- PATH: Define una lista de directorios donde el sistema busca ejecutables cuando se introduce un comando.
+- HOME: Indica el directorio home del usuario actual.
+- USER: Contiene el nombre del usuario actual.
+- TEMP o TMP: Directorio donde se almacenan archivos temporales.
+- LANG o LC_ALL: Configuran el idioma y la localización del entorno.
 
 ### Para crear un contenedor con variables de entorno
 
