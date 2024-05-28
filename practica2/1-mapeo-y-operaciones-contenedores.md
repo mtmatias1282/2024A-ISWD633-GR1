@@ -104,7 +104,6 @@ cd /var/jenkins_home/secrets/
 ```
 
 ![Imagen](imagenes/4.png)
-**Para este punto no es necesario continuar con la instalación de Jenkins**
 
 
 ### Para ver los logs de un contenedor
