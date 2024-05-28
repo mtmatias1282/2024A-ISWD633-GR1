@@ -49,6 +49,8 @@ El comando **docker exec** te permite acceder a la sesión shell de un contenedo
 Para saber qué comando utilizar para abrir una terminal dentro de un contenedor, es útil conocer la imagen base del contenedor, ya que diferentes imágenes pueden usar diferentes shells o comandos para abrir una terminal. Puedes verificar la documentación de la imagen del contenedor en Docker Hub o en el repositorio de la imagen para obtener información específica sobre cómo abrir una terminal en esa imagen.
 - Para imágenes basadas en Debian o Ubuntu, puedes probar con bash.
 - Para imágenes basadas en Alpine Linux, puedes probar con sh.
+
+
 ![Imagen](imagenes/jenkins-i.PNG)
 ```
 docker exec -i <nombre contenedor> <programa o comando>
@@ -79,6 +81,8 @@ whoami
 ![Imagen](imagenes/3.png)
 
 **Si se visualiza el mensaje command not found, considerar**
+
+
 El problema se debe a que no se ha asignado un terminal de salida al contenedor al ejecutar el comando. Cuando usas docker exec -i jenkins-server /bin/bash en Windows, el comando se ejecuta pero no hay un terminal asignado para mostrar la salida del comando ls.
 
 
@@ -99,8 +103,9 @@ docker exec -it <nombre contenedor> <programa o comando>
 cd /var/jenkins_home/secrets/
 ```
 
-**Para este punto no es necesario continuar con la instalación de Jenkins**
 ![Imagen](imagenes/4.png)
+**Para este punto no es necesario continuar con la instalación de Jenkins**
+
 
 ### Para ver los logs de un contenedor
 ```
