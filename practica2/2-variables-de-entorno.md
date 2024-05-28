@@ -1,6 +1,18 @@
 # Variables de Entorno
-### ¿Qué son las variables de entorno
-# COMPLETAR
+### ¿Qué son las variables de entorno?
+
+
+Las variables de entorno son una forma de almacenar información específica del entorno del sistema operativo que puede ser utilizada por aplicaciones y procesos que se ejecutan en ese entorno. Estas variables son pares de clave-valor y se utilizan para configurar aspectos del comportamiento del sistema y de las aplicaciones sin necesidad de cambiar el código fuente.
+
+
+### Ejemplos de Variables de Entorno Comunes
+
+
+PATH: Define una lista de directorios donde el sistema busca ejecutables cuando se introduce un comando.
+HOME: Indica el directorio home del usuario actual.
+USER: Contiene el nombre del usuario actual.
+TEMP o TMP: Directorio donde se almacenan archivos temporales.
+LANG o LC_ALL: Configuran el idioma y la localización del entorno.
 
 ### Para crear un contenedor con variables de entorno
 
