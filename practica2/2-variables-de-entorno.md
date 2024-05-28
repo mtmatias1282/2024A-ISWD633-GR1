@@ -30,7 +30,7 @@ docker run -d --name contenedor1 -e username=matias -e role=admin nginx:alpine
 
 
 ```
-docker run -d --name contenedor1 -e username=matias -e role=admin nginx:alpine
+docker exec contenedor1 printenv
 ```
 ![Imagen](imagenes/21.png)
 
