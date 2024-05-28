@@ -32,7 +32,7 @@ docker run -d --name contenedor1 -e username=matias -e role=admin nginx:alpine
 ```
 docker run -d --name contenedor1 -e username=matias -e role=admin nginx:alpine
 ```
-
+![Imagen](imagenes/21.png)
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos
 ```
@@ -44,10 +44,11 @@ docker run -P -d --name contenedor2 mysql:8
 docker ps
 ```
 
-### Identificar el problema (iMAGEN)
+### Identificar el problema 
 ```
 docker logs contenedor2
 ```
+![Imagen](imagenes/22.png)
 
 ### Eliminar el contenedor creado con mysql:8 
 ```
@@ -65,13 +66,20 @@ Previo a esto es necesario crear el archivo y colocar las variables en un archiv
 ```
 docker run -d --name <nombre contenedor> --env-file=<nombreArchivo>.<extensión> <nombre imagen>
 ```
+
 **Considerar**
 Es necesario especificar la ruta absoluta del archivo si este se encuentra en una ubicación diferente a la que estás ejecutando el comando docker run.
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos y configurar las variables de entorno mediante un archivo
-# COMPLETAR
 
-# CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
+```
+docker run -P -d --name contenedor3 --env-file=mysqlVariables.env mysql:8
+```
+
+![Imagen](imagenes/23.png)
+
 
 ### ¿Qué bases de datos existen en el contenedor creado?
-# COMPLETAR
+
+
+![Imagen](imagenes/24.png)
