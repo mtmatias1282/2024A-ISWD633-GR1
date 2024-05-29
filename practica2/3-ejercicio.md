@@ -2,8 +2,7 @@
 ```
 > docker run -d --name postgres1 -e POSTGRES_PASSWORD=070407 postgres:11.21-alpine3.17
 ```
-# COMPLETAR IMAGEN
-
+![Imagen](imagenes/30.png)
 
 ### Crear un cliente de postgres. Usar la imagen: dpage/pgadmin4
 ```
