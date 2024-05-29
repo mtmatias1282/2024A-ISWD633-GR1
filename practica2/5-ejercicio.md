@@ -17,6 +17,7 @@ De acuerdo con el trabajo realizado, en la el esquema de ejercicio el puerto a e
 ![Imagen](imagenes/53.png)
 
 Ingresar desde el navegador al wordpress y finalizar la configuración de instalación.
+
 ![Imagen](imagenes/54.png)
 
 ![Imagen](imagenes/55.png)
