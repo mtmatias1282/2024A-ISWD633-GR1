@@ -25,9 +25,8 @@ La figura presenta el esquema creado en donde los puertos son:
 ![Imagen](imagenes/33.png)
 
 ### Crear la base de datos info, y dentro de esa base la tabla personas, con id (serial) y nombre (varchar), agregar un par de registros en la tabla, obligatorio incluir su nombre.
-```
-docker run -d --name pgadmin1 -e PGADMIN_DEFAULT_EMAIL=admin@mail.com -e PGADMIN_DEFAULT_PASSWORD=admin -p 8080:80 dpage/pgadmin4
-```
+![Imagen](imagenes/34.png)
+
 
 ## Desde el servidor postgresl
 ### Acceder al servidor
@@ -41,4 +40,4 @@ docker exec -it postgres1 psql -U postgres
 ```
 
 ### Realizar un select *from personas
-#imagen 35
+![Imagen](imagenes/35.png)
