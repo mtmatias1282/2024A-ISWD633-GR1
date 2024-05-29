@@ -8,7 +8,7 @@
 ```
 docker run -d --name pgadmin1 -e PGADMIN_DEFAULT_EMAIL=admin@mail.com -e PGADMIN_DEFAULT_PASSWORD=admin -p 8080:80 dpage/pgadmin4
 ```
-# COMPLETAR IMAGEN
+![Imagen](imagenes/31.png)
 
 La figura presenta el esquema creado en donde los puertos son:
 - a: 8080
