@@ -108,7 +108,7 @@ cd /var/jenkins_home/secrets/
 
 ### Para ver los logs de un contenedor
 ```
-docker logs n <cantidad de líneas> <nombre o id del contenedor> 
+docker logs -n <cantidad de líneas> <nombre o id del contenedor> 
 ```
 -t: para incluir la fecha y la hora
 
