@@ -13,7 +13,8 @@ docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta co
 docker run -d -v C:\Users\mtmat\OneDrive\Desktop\HTML:/usr/share/nginx/html -p 8080:80 --name mi-nginx nginx:alpine
 ```
 
-##imagen1
+![Volúmenes](imagenes/1.png)
+
 
 ### ¿Qué sucede al ingresar al servidor de nginx?
 
@@ -33,7 +34,9 @@ No tenia ningún archivo index.html dentro de la carpeta del contenedor, así qu
 
 
 Se puede observar la pagina web descargada previamente.
-##imagen2
+
+
+![Volúmenes](imagenes/2.png)
 
 
 ### Eliminar el contenedor
