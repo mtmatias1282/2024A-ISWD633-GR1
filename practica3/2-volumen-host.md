@@ -13,7 +13,7 @@ docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta co
 docker run -d -v C:\Users\mtmat\OneDrive\Desktop\HTML:/usr/share/nginx/html -p 8080:80 --name mi-nginx nginx:alpine
 ```
 
-![Volúmenes](imagenes/1.png)
+![Volúmenes](imagenes/1.1.png)
 
 
 ### ¿Qué sucede al ingresar al servidor de nginx?
