@@ -100,18 +100,7 @@ docker run -d --name server-drupal --publish published=9700,target=80 -v drupal-
 
 _La instalación puede tomar varios minutos, mientras espera realice un diagrama de los contenedores que ha creado en este apartado._
 
-
-Cliente web (Navegador)
-   |
-   |---> Puerto 9500
-         |
-         |---> client-postgres (pgAdmin4)
-               |
-               |---> net-drupal
-                     |
-                     |---> server-drupal (Drupal)
-                     |
-                     |---> server-postgres (PostgreSQL)
+![Imagen](imagenes/4.6.png)
 
 
 ### Fin instalación
