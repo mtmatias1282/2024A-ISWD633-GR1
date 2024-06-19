@@ -1,4 +1,4 @@
-# COMPLETAR  
+# Mi aprendizaje
 
 
 En esta práctica, aprendí sobre la importancia de limitar el uso de recursos en Docker, como la memoria y la CPU, para evitar abusos, aislar contenedores, gestionar eficientemente los recursos y mantener la estabilidad y el rendimiento del sistema. Configuré contenedores con límites específicos de memoria RAM y CPU, calculando la memoria swap disponible y utilizando opciones como --cpus y --cpuset-cpus.
